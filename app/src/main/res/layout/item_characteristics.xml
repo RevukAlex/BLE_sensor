@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UUID"
+        android:textColor="@color/black"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/textView"
+        android:text="Property"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/char_UUID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+
+        android:layout_toEndOf="@+id/textView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/char_property"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/char_UUID"
+        android:layout_alignTop="@+id/textView2"
+        android:text="TextView" />
+</RelativeLayout>
